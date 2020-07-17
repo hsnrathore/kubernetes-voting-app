@@ -10,6 +10,6 @@ spec:
   ports:
     - targetPort: 6379
       port: 6379
-      selectors:
-        name: redis-pod
-        app: demo-voting-app
+  selector:
+      name: redis-pod
+      app:  demo-voting-app

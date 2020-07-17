@@ -10,6 +10,6 @@ spec:
   ports:
     - targetPort: 5432
       port: 5432
-      selectors:
-        name: postgres-pod
-        app: demo-voting-app
+  selector:
+      name: postgres-pod
+      app: demo-voting-app
