@@ -18,6 +18,11 @@ spec:
           image: postgres:9.4
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: admin
+            - name: POSTGRES_PASSWORD
+              value: pakistan
   replicas: 1
   selector:
      matchLabels:
