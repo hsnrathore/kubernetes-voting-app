@@ -20,9 +20,9 @@ spec:
             - containerPort: 5432
           env:
             - name: POSTGRES_USER
-              value: admin
+              value: "postgres"
             - name: POSTGRES_PASSWORD
-              value: pakistan
+              value: "postgres"
   replicas: 1
   selector:
      matchLabels:
